@@ -1,0 +1,48 @@
+
+<link rel="stylesheet" href="styles/ResultadoDeBuscas.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <div id="contedor_das_questões">
+       <p id="ksa"></p>
+        {{#each questoes}}
+              <div class="questão">
+              <h3>{{confi_quest}}</h3>
+              <p>{{enunciado}}</p>
+              <div class="contedor_de_alternativas_e_imagens">
+              <div class="contedor_de_alternativas">
+              {{#each alternativas}}
+              <p  class='alternativa'>{{this}}</p>
+              {{/each}}
+              </div>
+              {{#imagem image}}
+              {{/imagem}}
+              </div>
+              <p class ='resposta'>resposta: {{resposta}}</p>
+              </div>
+        {{/each}}
+
+    </div>
+
+    <script type="text/javascript">
+        function Respostas() {
+           var elems = document.getElementsByClassName('resposta');
+            for (var i = 0; i < elems.length; i++) {
+                if (getComputedStyle(elems[i]).visibility == 'visible') {
+                       elems[i].style.visibility = 'hidden';
+                       document.querySelector('button').innerText ="Mostrar Respostas"
+               }
+                else if (getComputedStyle(elems[i]).visibility == 'hidden') {
+                    elems[i].style.visibility = 'visible';
+                    document.querySelector('button').innerText ="Ocultar Respostas"
+                    }
+                }
+            }
+      </script>
+    <script type="text/javascript">
+   MathJax.typeset()
+   MathJax = {
+  tex: {
+    adaptiveCSS: true              // true means only produce CSS that is used in the processed equations
+  }
+};

@@ -1,0 +1,105 @@
+.introduction{
+    font-family: 'Fredoka One', cursive;
+    display: inline;
+    margin:0px;
+    font-size: 1.17em;
+}
+
+#Mila{
+    width: 450px;
+    position: absolute;
+    bottom:0px;
+    right: 0px
+}
+
+
+#bubble {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    overflow: auto;
+}
+
+#bubble > img{
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0px;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+#content{
+    position: relative;
+    height: 80vh;
+    width: 550px;
+    margin: 3vh auto;
+}
+
+.clickable{
+    color: black;
+    text-decoration: underline black solid;
+}
+.clickable:hover, .clickable:focus{
+    cursor:pointer;
+    text-decoration: underline white solid;
+}
+
+.clickable:active{
+    cursor: pointer;
+    color:#B5A2A2;
+    text-decoration: underline #B5A2A2 solid;
+}
+.writing{
+    position:absolute;
+    top:50px;
+    left: 35px;
+}
+
+#reference{
+position: absolute;
+bottom:0px
+}
+
+.referencia{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+}
+@media screen and (max-width: 900px) {
+       .introduction{
+          font-size: 12px;
+      }
+
+      #bubble{
+          width: 229px;
+          height: 213px;
+      }
+
+      #content{
+        height: 80vh;
+        width: 415px;
+        max-width: 80%;
+    }
+
+    #Mila{
+        top: 120px;
+    }
+
+    .writing{
+        top:25px;
+        left: 25px;
+    }
+      
+}
+
+
+
+/*Para quando a div content passa a valer 80% da width do navegador*/
+@media screen and (max-width: 519px) {
+     #Mila{
+     right: 0px;   
+     top:200px;
+     max-width:inherit;
+}
+
+}

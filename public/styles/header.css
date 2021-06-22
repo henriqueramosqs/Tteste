@@ -1,0 +1,101 @@
+header{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: min(15vh,110px);}
+
+
+h1{
+    color:white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.nav{
+    color: #B5A2A2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22.5px;
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+header > img{
+    height: 81px;
+    margin-left: 17px;
+}
+
+#features{
+    display: flex;
+    position: absolute;
+    right: 39px;
+}
+
+
+.nav:hover,.nav:focus{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.nav:active{
+    color: #808080;
+    cursor: pointer;
+}
+
+body{
+    margin:0px;
+    overflow-x: hidden;
+    background-color: #808080;
+}
+
+.starter{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-top: revert;
+    width: fit-content;
+    position: relative;
+    left: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    h1{ 
+        font-size: 15px;
+    }
+    .nav{
+        font-size: 11.25px;
+        margin-left: 10px;
+    }
+
+    #features{
+        right: 10px;
+    }
+
+    header > img{
+        height: 11.5vh;
+    }
+}
+
+
+    
+
+@media screen and (max-width: 425px) {
+    h1{ 
+        font-size: 12px;
+    }
+    .nav{
+        font-size: 9px;
+        margin-left: 8px;
+    }
+
+    #features{
+        right: 10px;
+    }
+
+    header > img{
+        height: 11.5vh;
+        margin-left: 10px;
+    }
+}

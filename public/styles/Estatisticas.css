@@ -1,0 +1,100 @@
+#myChart{
+    background-color: #dad1d1;
+    border: 2px solid black;
+    width: calc(100% - 40px) !important;
+    margin: auto;
+    height: 70vh;
+}
+
+.container{
+    display: inline-flex;
+}
+
+
+form{
+    background-color: #DAD1D1;
+    display: inline-flex;
+    height: 2em;
+    margin: 20px auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 0px 20px;
+    align-items: center;
+    position: relative;
+    left:50px;
+}
+
+
+select{
+    color: black;
+    border-radius: 10px;
+    background-color: #B5A2A2;
+    font-family: 'Roboto', cursive;
+    max-width: 25vw;
+    border: 3px solid black;
+    margin-left: 8px;
+}
+
+p{
+    font-size: 20px; 
+    position: relative;
+    bottom:3px;   
+    font-family: 'Fredoka One', cursive;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+option{
+    border-radius: 10px;
+}
+
+select:focus{
+    outline: none;
+}
+
+button{
+    color: #808080;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: fit-content;
+    margin-left: 10px;
+}
+
+button:hover, button:focus{
+    color: white;
+    background-color: #808080;
+}
+
+.parâmetro{
+    display: inline-flex;
+    align-items: center;
+}
+
+#dois{
+    margin-left: 12px;
+}
+
+h1{font-size: 2em !important;}
+
+@media screen and (max-width: 580px) {
+    .container{
+        display: block;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    form{
+        left: 20px;
+        padding: 0px 12px;
+        max-width: calc(100% - 54px);
+    }
+
+    select{
+        margin-left: 2px;
+    }
+
+}
+    

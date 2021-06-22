@@ -1,0 +1,141 @@
+body{
+    background-color: #808080;
+}
+
+form{
+    background-color: #DAD1D1;
+    display: flex;
+    padding: 22px 35px;
+    position: relative;
+    width: 450px;
+    height: 80px;
+    max-width: 70%;
+    margin: 20px auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+
+select{
+    color: black;
+    border-radius: 10px;
+    background-color: #B5A2A2;
+    font-family: 'Roboto', cursive;
+    margin-top: 20px;
+    max-width: 25vw;
+    width: -webkit-fill-available;
+    border: 3px solid black;}
+
+p{
+    font-size: 22px;    
+    font-family: 'Fredoka One', cursive;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+option{
+    border-radius: 10px;
+}
+
+select:focus{
+    outline: none;
+}
+
+button{
+    color: #808080;
+    border-radius: 5px;
+    border: 2px solid black;
+    position: absolute;
+    width: 50px;
+    bottom:5px;
+    right:35px;
+}
+
+button:hover, button:focus{
+    color: white;
+    background-color: #808080;
+}
+
+.introduction{
+    font-family: 'Fredoka One', cursive;
+    position:relative;
+    z-index: 2;
+    top:30px;
+    display: inline;
+    margin:0px;
+    width:fit-content;
+    font-size: 1em;
+    left: 30px;
+}
+
+#bubble > img{
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0px;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+#bubble{
+    position: relative;
+    height: 170px;
+    padding-left: 20px;
+    max-width: 60%;
+    z-index: 2;
+    left:3px;
+}
+
+#container{
+    position: relative;
+    width: 502px;
+    max-width: 70%;
+    margin:0px auto;
+    height: 300px;
+}
+
+
+#Mila{
+    width: 300px;
+    max-width: 60vw;
+    position: absolute;
+    bottom:-26px;
+    right: -76px
+}
+
+#matéria{
+    width:100%
+}
+
+#conteúdo{
+    width:204px;
+}
+
+/*Para quando o texto dentro da bubble começar a colapsar com as bordar do speech */
+@media screen and (max-width:700px) {
+    .introduction{
+        font-size: 0.8em;
+        left:16px
+    }
+}
+
+/*Para quando o form passar a valer 80% da width do navegador*/
+@media screen and (max-width: 565.5px) {
+    form{
+        padding: 22px 5px;}
+     
+    p{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 493px) {
+    #Mila{
+        position: absolute;
+        top:97px;
+        right: -20vw;
+    
+    }
+}

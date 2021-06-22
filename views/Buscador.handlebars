@@ -1,0 +1,153 @@
+<link rel="stylesheet" href="styles/Buscador.css">
+<script language="javascript" type="text/javascript">
+      function dynamicdropdown(listindex) {
+        switch (listindex) {
+          case "Física":
+            document.getElementById("conteúdo").options[0] = new Option(
+              "Mecânica",
+              "Mecânica"
+            );
+            document.getElementById("conteúdo").options[1] = new Option(
+              "Gravitação",
+              "Gravitação"
+            );
+            document.getElementById("conteúdo").options[2] = new Option(
+              "Hidrostática",
+              "Hidrostática"
+            );
+            document.getElementById("conteúdo").options[3] = new Option(
+              "Ondulatória",
+              "Ondulatória"
+            );
+            document.getElementById("conteúdo").options[4] = new Option(
+              "Óptica",
+              "Óptica"
+            );
+            document.getElementById("conteúdo").options[5] = new Option(
+              "Termologia",
+              "Termologia"
+            );
+            document.getElementById("conteúdo").options[6] = new Option(
+              "Eletrostática",
+              "Eletrostática"
+            );
+            document.getElementById("conteúdo").options[7] = new Option(
+              "Eletrodinâmica",
+              "Eletrodinâmica"
+            );
+            document.getElementById("conteúdo").options[8] = new Option(
+              "Eletromagnetismo",
+              "Eletromagnetismo"
+            );
+            document.getElementById("conteúdo").options[9] = new Option(
+              "Física Moderna",
+              "Física Moderna"
+            );
+            document.getElementById("conteúdo").options[10] = new Option(
+              "Análise Dimensional",
+              "Análise Dimensional"
+            );
+
+            break;
+          case "Matemática":
+          document.getElementById("conteúdo").options[0] = new Option(
+              "Conjuntos e Funções",
+              "Conjuntos e Funções"
+            );
+            document.getElementById("conteúdo").options[1] = new Option(
+              "Progressões",
+              "Progressões"
+            );
+            document.getElementById("conteúdo").options[2] = new Option(
+              "Matrizes e sistemas lineares",
+              "Matrizes e sistemas lineares"
+            );
+            document.getElementById("conteúdo").options[3] = new Option(
+              "Trigonometria",
+              "Trigonometria"
+            );
+            document.getElementById("conteúdo").options[4] = new Option(
+              "Geomeria Plana",
+              "Geomeria Plana"
+            );
+            document.getElementById("conteúdo").options[5] = new Option(
+              "Geometria Espacial",
+              "Geometria Espacial"
+            );
+            document.getElementById("conteúdo").options[6] = new Option(
+              "Geometria Analítica",
+              "Geometria Analítica"
+            );
+            
+            document.getElementById("conteúdo").options[7] = new Option(
+              "Combinatória e Probabilidade",
+              "Combinatória e Probabilidade"
+            );
+            document.getElementById("conteúdo").options[8] = new Option(
+              "Números Complexos",
+              "Números Complexos"
+            );
+            document.getElementById("conteúdo").options[9] = new Option(
+              "Polinômios",
+              "Polinômios"
+            );
+
+            break;
+        }
+        return true;
+      }
+
+    </script>
+    <h1 class ="starter">Buscador de Questões</h1>
+    <form method="POST" action="/resultado_de_busca">
+      <div class="parâmetro">
+        <p>Prova</p>
+        <select id="prova" name="prova" size="0"required>
+          <option id="ITA" value="ITA">ITA</option>
+        </select>
+      </div>
+
+      <div class="parâmetro espaço">
+        <p>Matéria</p>
+        <select
+          id="matéria"
+          name="matéria"
+          size="0"
+          onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"
+          required
+       >
+          <option value="Física" selected>Física</option>
+          <option value="Matemática">Matemática</option>
+        </select>
+      </div>
+
+      <div class="parâmetro espaço">
+        <p>Conetúdo</p>
+        <select id="conteúdo" name="conteúdo" size="0" required >
+          <option value="Mecânica">Mecânica</option>
+          <option value="Gravitação">Gravitação</option>
+          <option value="Hidrostática">Hidrostática</option>
+          <option value="Ondulatória">Ondulatória</option>
+          <option value="Óptica">Óptica</option>
+          <option value="Termologia">Termologia</option>
+          <option value="Eletrostática">Eletrostática</option>
+          <option value="Eletrodinâmica">Eletrodinâmica</option>
+          <option value="Eletromagnetismo">Eletromagnetismo</option>
+          <option value="Física Moderna">Física Moderna</option>
+          <option value="Análise Dimensional">Análise Dimensional</option>
+
+
+          </select>
+      </div>
+     <button   style="font-family: 'Roboto', sans-serif;" id="botão_de_query" type="submit">
+        ok
+      </button>
+    </form>
+
+    <div id ="container">
+        <div id ="bubble">
+            <img src="/images/BolhaDeConversa.png">
+            <h3 class="introduction">Filtre as opções para achar exatamente o que você procura!</h3>    
+        </div>
+                <img id ="Mila" src="images/Mila_rosto.png">
+    </div>
