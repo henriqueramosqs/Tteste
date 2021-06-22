@@ -58,6 +58,7 @@ button:hover, button:focus{
     border-radius: 10px;
     max-height: 33vh;
     overflow-y: scroll;
+    text-align: -webkit-center
 }
 
 .respostas{
