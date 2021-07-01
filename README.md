@@ -26,4 +26,4 @@ em momentos que eu me deparava com desafios que à primeira vista eu nem sabia p
 
 <br>
 
-&nbsp; Além destes, eu utilizei o framework express.js, o body-parser como middleware,o handlebars coomo template engine e o PHPMyAdmin como gerenciador de banco de dados.
+&nbsp; Além destes, eu utilizei o framework express.js, o body-parser como middleware,o handlebars como template engine e o PHPMyAdmin como gerenciador de banco de dados.
