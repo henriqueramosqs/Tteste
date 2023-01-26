@@ -1,17 +1,23 @@
 # T Teste
   
-&nbsp; Um belo dia, percebi que quando pesquisava por questões de vestibular na internet, os resultados eram ou listas compiladas de um certo tópico com questões
-de várias universidades diferentes, ou provas inteiras de uma certa universidade. Daí veio a ideia de elaborar um banco de dados, onde as questões fossem classificadas 
-de acordo com a prova de vestibular, a matéria, o conteúdo, o ano de publicação e dessa forma o cliente pudesse filtrar questões por critérios específicos, que atendessem bem às 
-especificidades  da procura.<br>
-&nbsp; Como consequência de ter me determinado a seguir em frente com o projeto, pude desenvolver minhas habilidades de Front e Back-end, utilizar SQL e aprender bastantes coisas
-em momentos que eu me deparava com desafios que à primeira vista eu nem sabia por onde começar, como quando fui fazer o deploy dessa aplicação para um VPS Debian utilizando o SSH pela linha de comando.
-<br>
-&nbsp; Espero que o T Teste eu possa ajudar muitas pessoas e planejo continuar utilizando esse site para desafiar a minha criatividade à pensar em novas funcionalidades e melhorar minhas habilidades como programador.
-<br>
-&nbsp; &nbsp; <a href="/gif/believe-it-SfoRXO" title="Believe it"><img src="https://i.makeagif.com/media/8-01-2019/SfoRXO.gif" width="400px" alt="Believe it"></a><div style="font-size:11px;">make <a href="/" title="make a gif">cartoon GIFs</a> like this at MakeaGif</div>
+&nbsp; This web application constains bank of questions from the Instituto Tecnolóico da Aeronátutica`s entrance exam. From the front-end part of it, one can search past problems, filtered by subject and topic, and check statistics from other years.
 
-## Tecnologias utilizadas
+# Instalation
+&nbsp; To visualize this project, clone this repository:
+ ```
+   git clone https://github.com/henriqueramosqs/Tteste
+ ```
+  Then head to the directory dowloaded and install the required rependencies using:
+  ```
+   npm intall
+  ```
+  After that, import the .sql archive found in this repository to a mysql database in your machine and change  the information at /public/models to connect with it. That been done, run:
+  ```
+    npm start
+  ```
+  and access the application at localhost:3155 from your favorite browser.
+  
+## Technologies used
 
 <img align="left" alt="nodejs" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white" />
 <img align="left" alt="html" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
@@ -26,4 +32,4 @@ em momentos que eu me deparava com desafios que à primeira vista eu nem sabia p
 
 <br>
 
-&nbsp; Além destes, eu utilizei o framework express.js, o body-parser como middleware,o handlebars como template engine e o PHPMyAdmin como gerenciador de banco de dados.
+&nbsp; Beyond that, I`ve used the express.js framework, body-parser as a middleware, handlebars as template engine and chart.js to build the graphs.
