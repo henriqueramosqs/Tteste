@@ -5,8 +5,8 @@ var db  = mysql.createPool({
     connectionLimit : 10,
     host            : 'localhost',
     user            : 'root',
-    password        : 'megareaper3107',
-    database        : 'questoes'
+    password        : <password>,
+    database        : <database>
   });
 
 module.exports = {
